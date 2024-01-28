@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+<link href="{{ url_for('static', filename='style.css')}}" rel="stylesheet">
+<body>
+<table >
+
+{% for user in users %}
+    <tr>
+        <td>{{user[0]}} {{user[1]}}</td>
+    </tr>
+{% endfor %}
+</table>
+</body>
+</html>
